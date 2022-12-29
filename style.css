@@ -1,0 +1,28 @@
+
+.clock {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
+
+.clock__rim {
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    border: 10px solid black; 
+}
+
+.clock__hand {
+    background-color: black;
+    height: 4px;
+    width: 180px;
+    transform-origin: 100%;
+    transform: rotate(90deg);
+    position:absolute;
+    top: 50%;
+    transition: all 0.05sec;
+    transition-timing-function: cubic-bezier(0.1,2.7,0.58,1);
+}
+
